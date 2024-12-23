@@ -76,5 +76,5 @@ If you want to also check the detected aruco pose with respect to the map frame 
    . install/setup.bash
    ros2 topic echo /aruco_pose_in_map
    ```
-The robot will reach a position close to the aruco marker, detect it and then head back to the starting position.
+The robot will reach a position close to the aruco marker, wait for its detection and then head back to the starting position.
 Results and documentation will be found in the attached report. 
