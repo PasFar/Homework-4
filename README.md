@@ -34,14 +34,14 @@ This will open rviz with the configuration "explore.rviz".
 Finally, open another terminal, connect to the same docker container and run:
    ```
    . install/setup.bash
-   ros2 run rl_fra2mo_description follow_waypoints waypoints
+   ros2 run rl_fra2mo_description follow_waypoints.py waypoints
    ```
 The robot will move to the assigned waypoint described in the config/waypoints.yaml file with the order (3)->(4)->(2)->(1).
 Trajectories results can be seen in the related report.
 
 In order to test the mapping feature the commands are the same except for the last one which is: 
    ```
-   ros2 run rl_fra2mo_description follow_waypoints mapping
+   ros2 run rl_fra2mo_description follow_waypoints.py mapping
    ```
 The manipulator will move and map his sourroundings. The map results can be seen in the related report. 
 In this case the given waypoints will be the ones in config/mapping.yaml.
